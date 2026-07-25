@@ -124,7 +124,7 @@ window.addEventListener('unhandledrejection', function(e){ if (e && !e.reason){ 
 
 <section style="position:relative;height:82vh;min-height:540px;overflow:hidden;display:flex;align-items:flex-end">
   <div style="position:absolute;inset:0;background:#0d1216;overflow:hidden">
-    <iframe src="https://player.vimeo.com/video/1212701222?background=1&autopause=0&muted=1&autoplay=1&loop=1&quality=1080p&dnt=1" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" title="EG Garage" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:100vw;height:56.25vw;minHeight:100%;minWidth:177.78vh;pointerEvents:none;border:0"></iframe>
+    <video ref="{{ videoRef }}" src="hero.mp4" poster="hero-poster.jpg" autoPlay="{{ true }}" muted="{{ true }}" loop="{{ true }}" playsInline="{{ true }}" preload="auto" style="position:absolute;inset:0;width:100%;height:100%;objectFit:cover;animation:kenburns 26s ease-in-out infinite alternate"></video>
     <div style="position:absolute;inset:0;zIndex:2"></div>
   </div>
   <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,24,29,0.25) 0%,rgba(20,24,29,0.55) 55%,rgba(20,24,29,0.96) 100%)"></div>
